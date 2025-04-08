@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillipop - All Courses</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">SKILLIPOP</a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="courses.html" class="active">Courses</a></li>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="register.html" class="btn btn-primary">Register</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Course Filters -->
+    <section class="course-filters">
+        <div class="container">
+            <div class="filter-container">
+                <input type="text" id="search-input" placeholder="Search courses...">
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="Communication">Communication</button>
+                    <button class="filter-btn" data-category="Productivity">Productivity</button>
+                    <button class="filter-btn" data-category="Management">Management</button>
+                    <button class="filter-btn" data-category="Self-Awareness">Self-Awareness</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Details Section -->
+    <section class="course-listing">
+        <div class="container">
+            <div class="course-list" id="course-list">
+                <!-- Public Speaking -->
+                <div class="course-detail-card" data-category="Communication" 
+                     data-keywords="public speaking presentation communication">
+                    <div class="course-header">
+                        <h2>Public Speaking Mastery</h2>
+                        <span class="course-category">Communication</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 6 weeks</span>
+                            <span><i class="fas fa-user-tie"></i> Sarah Johnson</span>
+                            <span><i class="fas fa-star"></i> 4.8</span>
+                        </div>
+                        <p class="course-description">
+                            Master the art of public speaking with proven techniques from TEDx speakers. 
+                            Learn to overcome stage fright, structure compelling speeches, and engage 
+                            audiences effectively. Includes practical exercises and video feedback.
+                        </p>
+                        <div class="course-outcomes">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Overcome stage fear and anxiety</li>
+                                <li>Structure persuasive presentations</li>
+                                <li>Use body language effectively</li>
+                                <li>Handle Q&A sessions confidently</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Time Management -->
+                <div class="course-detail-card" data-category="Productivity" 
+                     data-keywords="time management productivity efficiency">
+                    <div class="course-header">
+                        <h2>Effective Time Management</h2>
+                        <span class="course-category">Productivity</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 weeks</span>
+                            <span><i class="fas fa-user-tie"></i> Michael Chen</span>
+                            <span><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <p class="course-description">
+                            Transform your productivity with scientifically-backed time management strategies. 
+                            Learn prioritization techniques, task batching, and tools to minimize distractions. 
+                            Includes personalized productivity audits.
+                        </p>
+                        <div class="course-outcomes">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Eisenhower Matrix prioritization</li>
+                                <li>Deep work strategies</li>
+                                <li>Digital tool optimization</li>
+                                <li>Overcoming procrastination</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Leadership development -->
+                <div class="course-detail-card" data-category="Management" 
+                     data-keywords="Develop essential skills to inspire and lead teams effectively">
+                    <div class="course-header">
+                        <h2>Leadership development</h2>
+                        <span class="course-category">Management</span>
+                    </div>
+                    <div class="course-body">
+                        <div class="course-meta">
+                            <span><i class="fas fa-clock"></i> 4 weeks</span>
+                            <span><i class="fas fa-user-tie"></i> Michael Chen</span>
+                            <span><i class="fas fa-star"></i> 4.6</span>
+                        </div>
+                        <p class="course-description">
+                        This course provides a foundation for leadership practice and aims to take you on a journey 
+                        of self-discovery. You will also gain insight into building inner stability and developing 
+                        your leadership skills. This is a beginner course designed for professionals from diverse work backgrounds.
+                        </p>
+                        <div class="course-outcomes">
+                            <h4>What You'll Learn:</h4>
+                            <ul>
+                                <li>Project Management</li>
+                                <li>Human Resource Management</li>
+                                <li>Learn to add value</li>
+                                <li>Confidence</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">About Us</a>
+                <a href="#">Contact</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2025 Skillipop. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
